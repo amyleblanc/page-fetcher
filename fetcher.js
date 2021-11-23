@@ -9,7 +9,7 @@ request(url, (error, response, body) => {
   if (error) {
     console.log('error:', error); // Print the error if one occurred
     console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-    return; 
+    return;
   }
 
   // Write to the file we are getting from path variable
@@ -20,6 +20,6 @@ request(url, (error, response, body) => {
     } else {
       console.log(`Downloaded and saved ${Buffer.byteLength(body, 'utf-8')} bytes to ${path}`);
     }
-  }); 
+  });
 });
 
